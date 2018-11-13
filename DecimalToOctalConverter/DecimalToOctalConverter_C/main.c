@@ -1,3 +1,7 @@
+/*
+ Created by: Jacob (Jake) Kendrick
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -21,13 +25,14 @@ int main (){
 	return 0;
 }
 
+//Converts a int to its octal representation.
 int octalConverter(int* x) {
 
 	char str[100];
 
-	_itoa_s(*x, str, 100, 8);
+	_itoa_s(*x, str, 100, 8); //Converts an int to base 8 then to a string (the final argument in the function is the base converter)
 
-	*x = atoi(str);
+	*x = atoi(str);//Converts the string back to an int (now in base 8)
 
 	return *x;
 }
