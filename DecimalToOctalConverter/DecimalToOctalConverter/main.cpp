@@ -1,3 +1,7 @@
+/*
+  Created by: Jacob (Jake) Kendrick
+*/
+
 #include <iostream>
 #include <math.h>
 #include <string>
@@ -23,6 +27,9 @@ int main() {
 	return 0;
 }
 
+/*
+  This function converts a int value to it's octal represenative value.  
+*/
 int octalConverter(int &x) {
 
 	string str = "";
